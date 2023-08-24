@@ -6,6 +6,12 @@
 
 .container {
   height: 100vh;
+  .date {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 
   .row {
     display: flex;
