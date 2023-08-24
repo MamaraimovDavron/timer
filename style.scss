@@ -23,6 +23,19 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      #input {
+        box-shadow: 0px 0px 10px grey;
+        border: none;
+        border-radius: 5px;
+        padding: 4px 8px;
+        width: 50%;
+        text-align: center;
+        font-size: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+      }
+
       p {
         font-size: 50px;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -34,7 +47,7 @@
       }
     }
 
-    .col-3 {
+    .btn-box {
       box-shadow: 5px 5px 10px gray;
       border-radius: 5px;
       width: 60%;
