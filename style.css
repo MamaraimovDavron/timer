@@ -15,7 +15,7 @@
   height: 100%;
 }
 .container .row .col-6 {
-  box-shadow: 10px 10px 10px grey, 0px 10px 10px grey, 20px 10px 10px grey;
+  box-shadow: 10px 10px 15px grey, 0px 10px 15px grey, 20px 10px 10px grey;
   width: 300px;
   height: 300px;
   border-radius: 20%;
