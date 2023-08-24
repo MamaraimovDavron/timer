@@ -1,9 +1,10 @@
 const minute = document.getElementById("minute");
 const second = document.getElementById("second");
+const startBtn = document.getElementById("startBtn");
 let m = 24;
-let s = 59;
+let s = 60;
 
-const timeStart = () => {
+const startTimer = () => {
   setInterval(() => {
     if (s > 0) {
       s--;
