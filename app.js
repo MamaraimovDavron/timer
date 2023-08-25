@@ -7,22 +7,26 @@ const date = new Date();
 
 console.log(date);
 
-todaysDate.innerHTML = `Todays is ${date.getUTCDate()} of august`;
+todaysDate.innerHTML = `Today is ${date.getUTCDate()} of august`;
 
 let m = input;
 let s = 60;
 
 const startTimer = () => {
   setInterval(() => {
-    if (s > 0 && m.value > 0) {
+    if (m.value < 0 || m.value == "") {
+      return;
+    } else if (s > 0 && m.value - 1 >= 0) {
       s--;
       m.value;
-    } else if (s <= 0 && m.value > 0) {
+    } else if (s <= 0 && m.value - 1 >= 0) {
       s = 59;
       m.value--;
+    } else {
+      s = 0;
     }
 
-    minute.innerHTML = m.value;
+    minute.innerHTML = m.value - 1 < 0 ? 0 : m.value - 1;
     second.innerHTML = s < 10 ? `0${s}` : s;
   }, 1000);
 };
