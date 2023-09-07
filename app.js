@@ -4,11 +4,27 @@ const startBtn = document.getElementById("startBtn");
 const input = document.getElementById("input");
 const todaysDate = document.getElementById("todaysDate");
 const date = new Date();
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+const month = date.getMonth();
 // startBtn.disabled = false;
 
 // console.log(date);
 
-todaysDate.innerHTML = `Today is ${date.getUTCDate()} of august`;
+todaysDate.innerHTML = `Today is ${date.getUTCDate()} of ${months[month]}`;
 
 let m = input;
 let s = 60;
